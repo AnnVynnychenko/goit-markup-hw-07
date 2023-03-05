@@ -1,0 +1,28 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+
+  .mobile-soc-list {
+    gap: 56px;
+  }
+
+  .mobile-soc-item {
+    flex-basis: calc((328px - 56px * 3) / 4);
+  }
+
+  .mobile-address-tel {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+
+  @media screen and (max-width: 767px) {
+    .footer-modal-email {
+      min-width: 396px;
+    }
+  }
+
+  .modal {
+    min-width: 392px;
+  }
+}
