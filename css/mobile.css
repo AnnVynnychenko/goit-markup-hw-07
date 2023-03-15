@@ -3,8 +3,11 @@
     max-width: 428px;
   }
 
+  /* --------------MOBILE MENU------------ */
+
   .mobile-soc-list {
     gap: 56px;
+    justify-content: start;
   }
 
   .mobile-soc-item {
@@ -16,11 +19,15 @@
     line-height: calc(40 / 36);
   }
 
+  /* --------------FOOTER--------------- */
+
   @media screen and (max-width: 767px) {
     .footer-modal-email {
       min-width: 396px;
     }
   }
+
+  /* --------------MODAL--------------- */
 
   .modal {
     min-width: 392px;

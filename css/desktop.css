@@ -1,3 +1,5 @@
+/* --------------GENERAL STYLES-------------- */
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1160px;
@@ -12,6 +14,8 @@
   .section-text {
     font-weight: 400;
   }
+
+  /* --------------HEADER-------------- */
 
   .logo {
     line-height: calc(24 / 18);
@@ -29,6 +33,8 @@
 
     font-size: 16px;
   }
+
+  /* --------------HERO-------------- */
 
   .hero {
     max-width: 1440px;
@@ -62,6 +68,8 @@
     max-width: 494px;
   }
 
+  /* ----------------ADVANTAGE--------------- */
+
   .advantage {
     padding-top: var(--padding);
     padding-bottom: var(--padding);
@@ -84,7 +92,6 @@
     align-items: center;
     width: 264px;
     height: 112px;
-
     margin-bottom: 8px;
 
     border-radius: var(--border-radius);
@@ -94,6 +101,8 @@
   .advantage-list .advantage-item {
     flex-basis: calc((100% - 24px * 3) / 4);
   }
+
+  /* ----------------FEATURES--------------- */
 
   .features {
     display: block;
@@ -117,6 +126,8 @@
     );
   }
 
+  /* ----------------TEAM--------------- */
+
   .team {
     padding-top: var(--padding);
     padding-bottom: var(--padding);
@@ -136,6 +147,8 @@
     height: 40px;
   }
 
+  /* ----------------CUSTOMERS--------------- */
+
   .customers {
     padding-top: var(--padding);
     padding-bottom: var(--padding);
@@ -150,6 +163,8 @@
   .customers-item {
     flex-basis: calc((100% - 24px * 5) / 6);
   }
+
+  /* ------ADDITIONAL STYLES FOR PAGE PORTFOLIO-------- */
 
   .portfolio {
     padding-top: 96px;
@@ -171,6 +186,7 @@
 
   .portfolio-text {
     padding: 32px 16px;
+
     border-left: 1px solid var(--accent-color);
     border-bottom: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
@@ -182,6 +198,8 @@
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
+
+  /* --------------FOOTER-------------- */
 
   .footer {
     padding-top: 100px;

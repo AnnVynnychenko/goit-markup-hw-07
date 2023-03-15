@@ -45,8 +45,8 @@ img {
 }
 
 button {
-  cursor: pointer;
   padding: 0;
+  cursor: pointer;
 }
 
 /* --------------GENERAL STYLES-------------- */
@@ -63,12 +63,12 @@ body {
   white-space: nowrap;
   width: 1px;
   height: 1px;
+  margin: -1px;
+  padding: 0;
   overflow: hidden;
   border: 0;
-  padding: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  margin: -1px;
 }
 
 .container {
@@ -125,6 +125,7 @@ body {
   font-weight: 500;
   line-height: calc(24 / 20);
   text-align: center;
+
   color: var(--title-color);
 }
 
@@ -182,6 +183,7 @@ body {
   color: var(--title-color);
   background-color: transparent;
   border-color: transparent;
+  transition: color var(--transition-duration) var(--transition-function);
 }
 
 .mobile-btn-open {
@@ -214,10 +216,10 @@ body {
 }
 
 .mobile-menu > .container {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100%;
 }
 
 .close-btn {
@@ -266,6 +268,7 @@ body {
 
 .mobile-menu-link {
   color: var(--title-color);
+  transition: color var(--transition-duration) var(--transition-function);
 }
 
 .mobile-menu-link.current {
@@ -307,22 +310,9 @@ body {
   margin-top: 48px;
 }
 
-@media screen and (min-width: 428px) {
-  .mobile-soc-list {
-    gap: 56px;
-    justify-content: start;
-  }
-}
-
 .mobile-soc-item {
   flex-basis: calc((250px - 30px * 3) / 4);
   height: 40px;
-}
-
-@media screen and (min-width: 428px) {
-  .mobile-soc-item {
-    flex-basis: calc((328px - 56px * 3) / 4);
-  }
 }
 
 .mobile-soc-link {
@@ -336,7 +326,8 @@ body {
   background-color: var(--primary-brand-color);
 
   transition: background-color var(--transition-duration)
-    var(--transition-function);
+      var(--transition-function),
+    border-color var(--transition-duration) var(--transition-function);
 }
 
 .mobile-soc-link:is(:hover, :focus) {
@@ -518,7 +509,6 @@ body {
 
 .customers-item {
   flex-basis: calc((100% - 16px * 1) / 2);
-
   height: 88px;
 }
 
@@ -712,6 +702,7 @@ body {
 
   font-weight: 500;
   line-height: calc(24 / 16);
+
   color: var(--white-color);
 }
 
@@ -769,8 +760,10 @@ body {
 
 .footer-modal-email {
   padding: 8px 16px;
+
   background-color: transparent;
   color: var(--white-color);
+
   outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -783,6 +776,7 @@ body {
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -803,7 +797,8 @@ body {
   fill: var(--white-color);
 }
 
-/* --------------------MODAL--------------------  */
+/* ----------------MODAL---------------  */
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -811,6 +806,7 @@ body {
   z-index: 100;
   width: 100%;
   height: 100%;
+
   background-color: rgba(46, 47, 66, 0.4);
 
   overflow-y: scroll;
@@ -824,7 +820,6 @@ body {
   top: 50%;
   left: 50%;
   padding: 24px;
-
   min-width: 316px;
 
   background-color: var(--modal-bg);
@@ -839,6 +834,7 @@ body {
 .modal-backdrop.is-hidden .modal {
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%) scale(0.25);
 }
 
@@ -848,6 +844,7 @@ body {
 
   line-height: calc(24 / 16);
   text-align: center;
+
   color: var(--title-color);
 }
 
@@ -856,9 +853,9 @@ body {
   margin-bottom: 4px;
 
   font-size: 12px;
-
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
+
   color: var(--light-slate);
 }
 
@@ -875,10 +872,12 @@ body {
   padding-bottom: 8px;
   padding-left: 38px;
   padding-right: 16px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: var(--border-radius);
   background-color: transparent;
   outline: transparent;
+
   transition: border-color var(--transition-duration) var(--transition-function);
 }
 
@@ -895,6 +894,7 @@ body {
   position: absolute;
   top: 50%;
   left: 16px;
+
   transform: translateY(-50%);
   transition: fill var(--transition-duration) var(--transition-function);
 }
@@ -919,6 +919,7 @@ body {
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
+
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -929,6 +930,7 @@ body {
 
   font-size: 12px;
   letter-spacing: 0.04em;
+
   color: #757575;
 }
 
